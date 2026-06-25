@@ -1,1 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:#fff;
+    line-height:1.6;
+}
+
+header{
+    background:#000;
+    text-align:center;
+    padding:40px;
+    border-bottom:3px solid #ffcc00;
+}
+
+header h1{
+    color:#ffcc00;
+}
+
+main{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+section{
+    margin-bottom:40px;
+}
+
+h2{
+    color:#ffcc00;
+    margin-bottom:15px;
+}
+
+.card{
+    background:#222;
+    padding:15px;
+    margin-bottom:15px;
+    border-left:4px solid #ffcc00;
+    border-radius:8px;
+}
+
+button{
+    background:#ffcc00;
+    color:#000;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#ffd633;
+}
+
+#textoCuriosidade{
+    margin-top:15px;
+    font-size:18px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    margin-top:40px;
+}
