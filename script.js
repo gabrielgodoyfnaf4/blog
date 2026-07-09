@@ -1,20 +1,20 @@
-const curiosidades = [
-    "Golden Freddy pode aparecer aleatoriamente e travar o jogo.",
-    "Scott Cawthon criou FNAF em apenas alguns meses.",
-    "Foxy é o único animatrônico que corre até o escritório.",
-    "As mensagens do Phone Guy escondem pistas importantes da história.",
-    "FNAF 1 foi lançado em agosto de 2014."
-];
+const likeBtn = document.getElementById("likeBtn");
+const likeCount = document.getElementById("likeCount");
 
-const botao = document.getElementById("btnCuriosidade");
-const texto = document.getElementById("textoCuriosidade");
+let likes = localStorage.getItem("likes");
 
-botao.addEventListener("click", () => {
+if (likes === null) {
+    likes = 0;
+}
 
-    const indice = Math.floor(
-        Math.random() * curiosidades.length
-    );
+likes = Number(likes);
 
-    texto.textContent = curiosidades[indice];
+likeCount.textContent = likes;
 
+likeBtn.addEventListener("click", () => {
+    likes++;
+
+    likeCount.textContent = likes;
+
+    localStorage.setItem("likes", likes);
 });

@@ -1,72 +1,80 @@
-*{
+**{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    font-family:Arial, sans-serif;
     background:#111;
-    color:#fff;
-    line-height:1.6;
+    color:white;
 }
 
 header{
     background:#000;
     text-align:center;
-    padding:40px;
-    border-bottom:3px solid #ffcc00;
+    padding:30px;
+    border-bottom:4px solid #FFD700;
 }
 
 header h1{
-    color:#ffcc00;
+    color:#FFD700;
 }
 
 main{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
+    display:flex;
+    justify-content:center;
+    padding:40px;
 }
 
-section{
-    margin-bottom:40px;
-}
-
-h2{
-    color:#ffcc00;
-    margin-bottom:15px;
-}
-
-.card{
+.post{
     background:#222;
-    padding:15px;
-    margin-bottom:15px;
-    border-left:4px solid #ffcc00;
-    border-radius:8px;
+    width:700px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(255,215,0,.3);
+}
+
+.post img{
+    width:100%;
+}
+
+.post h2{
+    padding:20px;
+    color:#FFD700;
+}
+
+.post p{
+    padding:0 20px 20px;
+    line-height:1.6;
 }
 
 button{
-    background:#ffcc00;
-    color:#000;
+    margin:20px;
+    padding:12px 25px;
     border:none;
-    padding:10px 20px;
+    border-radius:8px;
+    background:#FFD700;
+    color:#000;
     cursor:pointer;
-    border-radius:5px;
+    font-size:18px;
     font-weight:bold;
+    transition:.3s;
 }
 
 button:hover{
-    background:#ffd633;
+    background:#ffef9f;
 }
 
-#textoCuriosidade{
-    margin-top:15px;
+.likes{
     font-size:18px;
+    font-weight:bold;
+    padding-bottom:20px;
 }
 
 footer{
+    background:#000;
     text-align:center;
     padding:20px;
-    background:#000;
-    margin-top:40px;
+    margin-top:30px;
 }
