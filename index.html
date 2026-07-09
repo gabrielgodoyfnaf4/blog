@@ -1,9 +1,108 @@
-<button id="likeBtn">❤️ Curtir</button>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<p class="likes">
-    Curtidas: <span id="likeCount">0</span>
-</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNAF 2 Blog</title>
 
-<div id="curiosidade" class="curiosidade">
-    Clique em ❤️ Curtir para descobrir uma curiosidade!
-</div>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🎭 Five Nights at Freddy's 2</h1>
+
+    <p>O maior blog brasileiro sobre FNAF 2</p>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="banner">
+
+    <h2>Bem-vindo à Freddy Fazbear's Pizza!</h2>
+
+    <p>
+        Descubra teorias, curiosidades, personagens e os maiores mistérios
+        de Five Nights at Freddy's 2.
+    </p>
+
+</section>
+
+<section class="post" id="sobre">
+
+    <h2>Sobre o jogo</h2>
+
+    <p>
+        Five Nights at Freddy's 2 é um jogo de terror criado por Scott
+        Cawthon. O jogador assume o papel de um vigia noturno que precisa
+        sobreviver aos ataques dos animatrônicos usando uma lanterna,
+        uma máscara do Freddy e muita estratégia.
+    </p>
+
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>🤖 Toy Animatronics</h3>
+        <p>Versões modernas criadas para divertir as crianças.</p>
+    </div>
+
+    <div class="card">
+        <h3>👻 The Puppet</h3>
+        <p>Um dos personagens mais importantes da história da franquia.</p>
+    </div>
+
+    <div class="card">
+        <h3>💀 Mangle</h3>
+        <p>O animatrônico desmontado mais assustador do restaurante.</p>
+    </div>
+
+</section>
+
+<section class="like-area">
+
+    <button id="likeBtn">
+        ❤️ Curtir o Blog
+    </button>
+
+    <h3>
+        Curtidas:
+        <span id="likeCount">0</span>
+    </h3>
+
+</section>
+
+<section id="curiosidades">
+
+    <div id="curiosidade" class="curiosidade">
+
+        Clique no botão ❤️ para descobrir uma curiosidade sobre FNAF 2.
+
+    </div>
+
+</section>
+
+</main>
+
+<footer id="contato">
+
+<p>© 2026 Blog Five Nights at Freddy's 2</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
